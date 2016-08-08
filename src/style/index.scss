@@ -1,0 +1,305 @@
+html, body,button
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height:100%;
+}
+
+body {
+  max-width: 640px;
+  width: 100%;
+  height:100%;
+  margin:auto;
+  font-family: STHeitiSC-Light ;
+  background-color: #EFEFEF;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.color-orange {
+  color: #ff5a00;
+}
+
+.none {
+  display: none;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+button, input, div{
+  -webkit-touch-callout: none;
+  outline:none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  -webkit-touch-callout: none;
+  outline:none;
+}
+body {
+  background: url(/src/images/index-bg.png) 0 0 no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.game-booming {
+  background: url(/src/images/game-booming.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+// game.html
+.game-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .game-board {
+    background: url(/src/images/game-board.png) 0 0 no-repeat;
+    width: 250px;
+    height: 143px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    img {
+      width: 100px;
+      height: 100px;
+      margin-left: 15px;
+      margin-top: 26px;
+    }
+    .countDown {
+      display: block;
+      width: 50px;
+      right: 47px;
+      position: absolute;
+      top: 100px;
+      text-align: center;
+      margin-top: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #c87113;
+    }
+    .game-score {
+      text-align: center;
+      width: 90px;
+      height: 30px;
+      line-height: 30px;
+      color: #ff5a00;
+      font-size: 24px;
+      font-weight: bold;
+      position: absolute;
+      top: 50px;
+      right: 27px;
+    }
+  }
+  .game-holes {
+    background: url(/src/images/game-hole.png) 0 0 no-repeat;
+    width: 298px;
+    // width: 93%;
+    height: 232px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    ul {
+      display: block;
+      float: left;
+      margin-left: 19px;
+      position: relative;
+      li {
+        width: 85px;
+        height: 63px;
+        display: block;
+        float: left;
+        position: relative;
+        div {
+          display: block;
+          cursor: pointer;
+          opacity: 0;
+          background: url(/src/images/game-coin.png) 0 0 no-repeat;
+          background-size: 100% 100%;
+          width: 56px;
+          height: 58px;
+          position: absolute;
+          span {
+            margin-top: 20px;
+            text-align: center;
+            color: #ea6334;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+          }
+        }
+        i {
+          text-align: center;
+          color: #fff;
+          font-weight: bold;
+          display: block;
+          font-style: normal;
+          position: absolute;
+          opacity: 0;
+        }
+      }
+      li:nth-child(1) div {
+        top: 2px;
+        left: 24px;
+      }
+      li:nth-child(2) div {
+        top: 2px;
+        left: 16px;
+      }
+      li:nth-child(3) div {
+        top: 2px;
+        left: 9px;
+      }
+      li:nth-child(4) div {
+        top: 5px;
+        left: 18px;
+      }
+      li:nth-child(5) div {
+        top: 5px;
+        left: 16px;
+      }
+      li:nth-child(6) div {
+        top: 5px;
+        left: 15px;
+      }
+      li:nth-child(7) div {
+        top: 5px;
+        left: 12px;
+      }
+      li:nth-child(8) div {
+        top: 5px;
+        left: 16px;
+      }
+      li:nth-child(9) div {
+        top: 5px;
+        left: 22px;
+      }
+
+
+      li:nth-child(1) i {
+        top: 2px;
+        left: 43px;
+      }
+      li:nth-child(2) i {
+        top: 2px;
+        left: 34px;
+      }
+      li:nth-child(3) i {
+        top: 2px;
+        left: 27px;
+      }
+      li:nth-child(4) i {
+        top: 5px;
+        left: 36px;
+      }
+      li:nth-child(5) i {
+        top: 5px;
+        left: 34px;
+      }
+      li:nth-child(6) i {
+        top: 5px;
+        left: 33px;
+      }
+      li:nth-child(7) i {
+        top: 5px;
+        left: 30px;
+      }
+      li:nth-child(8) i {
+        top: 5px;
+        left: 34px;
+      }
+      li:nth-child(9) i {
+        top: 5px;
+        left: 40px;
+      }
+    }
+  }
+  .game-logo {
+    background: url(/src/images/game-logo.png) 0 0 no-repeat;
+    width: 298px;
+    // width: 93%;
+    height: 96px;
+    background-size: 100% 100%;
+    margin: 0 auto;
+  }
+}
+.game-mask {
+  position: fixed;
+  max-width: 640px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  z-index: 998;
+  -moz-opacity: .5;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+.game-countdown {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  z-index: 9999;
+  top: -18px;
+  left: 40px;
+}
+.visibility-hidden {
+  visibility: hidden;
+}
+.game-countdown-4 {
+  background: url(/src/images/game-countdown-4.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.game-countdown-3 {
+  background: url(/src/images/game-countdown-3.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.game-countdown-2 {
+  background: url(/src/images/game-countdown-2.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.game-countdown-1 {
+  background: url(/src/images/game-countdown-1.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.game-over {
+  background: url(/src/images/game-over.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 320px) and (orientation : portrait) {
+  .game-container {
+    bottom: 55px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) and (orientation : portrait) {
+  .game-container {
+    bottom: 55px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 414px) and (orientation : portrait) {
+  .game-container .game-holes ul li div span {
+    margin-top: 15px;
+  }
+  .game-container {
+    bottom: 60px;
+  }
+}
+@media only screen and (min-device-width: 720px) and (orientation : portrait) {
+  .game-container .game-holes ul li div span {
+    margin-top: 20px;
+  }
+}
