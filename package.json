@@ -27,8 +27,8 @@
     "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/index.js",
     "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'",
     "build:all": "npm run scss && npm run autoprefixer && npm run uglify",
-    "watch:css": "onchange 'src/style/*.scss' -- npm run build:css",
-    "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
+    "watch:css": "onchange 'src/style/*.scss' -- npm run scss",
+    "watch:js": "onchange 'src/js/*.js' -- npm run uglify",
     "watch:all": "npm-run-all -p serve watch:css watch:js",
     "dev": "npm run build:all && npm run watch:all"
   },

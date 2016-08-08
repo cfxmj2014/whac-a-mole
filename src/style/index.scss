@@ -106,7 +106,6 @@ body {
   .game-holes {
     background: url(/src/images/game-hole.png) 0 0 no-repeat;
     width: 298px;
-    // width: 93%;
     height: 232px;
     background-size: 100% 100%;
     margin: 0 auto;
@@ -114,7 +113,6 @@ body {
     ul {
       display: block;
       float: left;
-      margin-left: 19px;
       position: relative;
       li {
         width: 85px;
@@ -151,78 +149,77 @@ body {
         }
       }
       li:nth-child(1) div {
-        top: 2px;
-        left: 24px;
+        top: -13px;
+        left: 4px;
       }
       li:nth-child(2) div {
-        top: 2px;
-        left: 16px;
+        top: -13px;
+        left: -4px;
       }
       li:nth-child(3) div {
-        top: 2px;
-        left: 9px;
+        top: -13px;
+        left: -11px;
       }
       li:nth-child(4) div {
-        top: 5px;
-        left: 18px;
+        top: -11px;
+        left: -2px;
       }
       li:nth-child(5) div {
-        top: 5px;
-        left: 16px;
+        top: -11px;
+        left: -4px;
       }
       li:nth-child(6) div {
-        top: 5px;
-        left: 15px;
+        top: -11px;
+        left: -6px;
       }
       li:nth-child(7) div {
-        top: 5px;
-        left: 12px;
+        top: -9px;
+        left: -10px;
       }
       li:nth-child(8) div {
-        top: 5px;
-        left: 16px;
+        top: -9px;
+        left: -4px;
       }
       li:nth-child(9) div {
-        top: 5px;
-        left: 22px;
+        top: -9px;
+        left: 1px;
       }
-
 
       li:nth-child(1) i {
         top: 2px;
-        left: 43px;
+        left: 5px;
       }
       li:nth-child(2) i {
         top: 2px;
-        left: 34px;
+        left: 11px;
       }
       li:nth-child(3) i {
         top: 2px;
-        left: 27px;
+        left: 9px;
       }
       li:nth-child(4) i {
         top: 5px;
-        left: 36px;
+        left: 13px;
       }
       li:nth-child(5) i {
         top: 5px;
-        left: 34px;
+        left: 11px;
       }
       li:nth-child(6) i {
         top: 5px;
-        left: 33px;
+        left: 11px;
       }
       li:nth-child(7) i {
         top: 5px;
-        left: 30px;
+        left: 10px;
       }
       li:nth-child(8) i {
         top: 5px;
-        left: 34px;
+        left: 11px;
       }
       li:nth-child(9) i {
         top: 5px;
-        left: 40px;
+        left: 13px;
       }
     }
   }
